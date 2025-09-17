@@ -1,0 +1,9 @@
+numpy==2.3.3
+ollama==0.5.4
+pandas==2.3.2
+scipy==1.16.2
+tqdm==4.65.0
+matplotlib==3.7.1
+scikit-learn==1.2.2
+sentence_transformers==5.1.0
+datasets==2.14.5

@@ -1,0 +1,37 @@
+# ---------------------
+# Python ignores
+# ---------------------
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg-info/
+*.egg
+dist/
+build/
+.venv/
+venv/
+env/
+pip-wheel-metadata/
+
+# ---------------------
+# IDE / Editor settings
+# ---------------------
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# ---------------------
+# Project-specific ignores
+# ---------------------
+
+local_*/
+.q*
+
+# ---------------------
+# OS-specific ignores
+# ---------------------
+.DS_Store
+Thumbs.db
