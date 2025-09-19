@@ -3,7 +3,7 @@
 Automatic short answer grading (ASAG) is the task of computationaly grading short answer to objective questions. It is different than AEG (automatic
 essay grading) which is concerned with longer but less objective answers.
 
-some methods used to achieve the objective include Prompt Engineering \[1]\[2], Word embedding similariy \[3] and sentence embedding similarity or finetuning these pretrained models\ [4]. Out of these, the last two are present in this repositoy. 
+some methods used to achieve the objective include Prompt Engineering \[1]\[2], Word embedding similariy \[3] and sentence embedding similarity or finetuning these pretrained models \[4]. Out of these, the last two are present in this repositoy. 
 
 # Dataset
 The data set used is edited version of [Mohler data set](http://web.eecs.umich.edu/~mihalcea/downloads/ShortAnswerGrading_v1.0.tar.gz) provided by [rada mihalcea](http://web.eecs.umich.edu/~mihalcea/downloads/ShortAnswerGrading_v1.0.tar.gz). 
