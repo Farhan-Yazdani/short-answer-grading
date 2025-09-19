@@ -3,7 +3,7 @@
 Automatic short answer grading (ASAG) is the task of computationaly grading short answer to objective questions. It is different than AEG (automatic
 essay grading) which is concerned with longer but less objective answers.
 
-some methods used to achieve the objective include Prompt Engineering \[1]\[2], Word embedding similariy \[3] and sentence embedding similarity or finetuning these pretrained models\[4]. Out of these, the last two are present in this repositoy. 
+some methods used to achieve the objective include Prompt Engineering \[1]\[2], Word embedding similariy \[3] and sentence embedding similarity or finetuning these pretrained models\ [4]. Out of these, the last two are present in this repositoy. 
 
 # Dataset
 The data set used is edited version of [Mohler data set](http://web.eecs.umich.edu/~mihalcea/downloads/ShortAnswerGrading_v1.0.tar.gz) provided by [rada mihalcea](http://web.eecs.umich.edu/~mihalcea/downloads/ShortAnswerGrading_v1.0.tar.gz). 
@@ -21,16 +21,16 @@ However scaling can be considered a linear regression, it will be not be done so
 
 ## train, test, eval
 
-The following will be the train, eval test split for finetuning:
+The following files will be the train, eval and test split for finetuning:
 
-train_all_row_k_is_11: 11 question and answers per question(all row attributes from main dataset)
+`train_all_row_k_is_11.csv`: 11 question and answers per question(all row attributes from main dataset)
 
-eval_all_row_k_is_3: 3 row per question for evaluation
+`eval_all_row_k_is_3.csv`: 3 row per question for evaluation
 
-test_all_row_k_is_11: All the remaining rows per question, which in most cases *means* 16 = 30 - 11 - 3 (there are usually 30 answers for each question).
+`test_all_row_k_is_11.csv`: All the remaining rows per question, which in most cases *means* 16 = 30 - 11 - 3 (there are usually 30 answers for each question).
 
 
-{train | eval | test}_triplets_row_k_is_14:  triplets of form (true answer, student answer , score).
+`{train | eval| test}_triplets_row_k_is_14.csv`:  triplets of form (true answer, student answer , score).
 
 In the above file names, k denote the number of row per question for train and eval so for test split it mean the rows used in other splits. 
 
