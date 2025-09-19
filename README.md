@@ -66,15 +66,47 @@ three polynomial regression were train on the predicted scores using 1 to 4 degr
 
 ## results
 
-                |           Model             |  RMSE  |    ρ    |
-                |-----------------------------|--------|---------|
-                |cosine similarity with mxbai | 1.02   |  0.52   |
-                | all-MiniLM-L6-v2 finetuned  | 0.97   |  0.72   |
-                | all-MiniLM-L6-v2 finetuned  | 0.97   |  0.72   |  
-                | degree 1 poly regression    | 0.80   |  0.73   |
-                | degree 2 poly regression    | 0.78   |  0.76   |
-                | degree 2 poly regression    | 0.80   |  0.76   |
-                | degree 4 poly regression    | 0.75   |  0.76   |
+<table>
+  <thread>
+  <tr>
+    <th>Model</th>
+    <th>RMSE</th>
+    <th>ρ</th>
+  </tr>
+  </thread>
+  <tbody>
+    <tr>
+    <td>cosine similarity using mxbai-embed-large </td>
+    <td>1.02</td>
+    <td>0.52</td>
+  </tr>
+  <tr>
+    <td>all-MiniLM-L6-v2 finetuned</td>
+    <td>0.97</td>
+    <td>0.72</td>
+  </tr>
+  <tr>
+    <td>degree 1 poly regression (linear regression)</td>
+    <td>0.80</td>
+    <td>0.73</td>
+  </tr>
+  <tr>
+    <td>degree 2 poly regression</td>
+    <td>0.78</td>
+    <td>0.76</td>
+  </tr>
+    <tr>
+    <td>degree 3 poly regression</td>
+    <td>0.80</td>
+    <td>0.76</td>
+  </tr>
+    <tr>
+    <td>degree 4 poly regression</td>
+    <td>0.75</td>
+    <td>0.76</td>
+  </tr>
+  </tbody>
+  </table> 
 
 
 ## future work
