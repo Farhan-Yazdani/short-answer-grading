@@ -81,6 +81,26 @@ def rmse(actual_values, predicted_values):
 
     return rmse
 
+def mae(actual_values, predicted_values):
+    """
+    Calculates the mean absolute error (MAE) between actual and predicted values.
+
+    Parameters
+    ------
+        actual_values : np.ndarray
+            A NumPy array of actual values.
+        predicted_values : np.ndarray
+            A NumPy array of predicted values.
+
+    Returns
+    -----
+        float: The calculated MAE value.
+    """
+    absolute_error_vector = np.absolute(actual_values - predicted_values)
+    return np.mean(absolute_error_vector) 
+
+
+
 def round_to(input,round_percision):
     '''
         round to values like 0.25 or 0.5
@@ -118,7 +138,8 @@ def print_scores(ground_truth, predictions):
     assert predictions.shape == ground_truth.shape
 
    
-    print('rmse: ', rmse(ground_truth,predictions) , end=' ')
+    print('RMSE: ', rmse(ground_truth,predictions) , end=' ')
+    print('MAE: ', mae(ground_truth,predictions) , end=' ')
     print('r: ', stats.pearsonr(ground_truth.reshape(-1), predictions.reshape(-1)).statistic)
 
 
@@ -165,7 +186,7 @@ def get_E(series, model, size_of_embedding):
     '''
     return embeddings for a series of sentences
     Args:
-        series (pandas series): containint senetences
+        series (pandas series): containing senetences
 
         
     Returns:

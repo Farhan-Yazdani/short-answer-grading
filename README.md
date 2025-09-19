@@ -68,7 +68,7 @@ three polynomial regression were train on the predicted scores using 1 to 4 degr
 
                 |           Model             |  RMSE  |    ρ    |
                 |-----------------------------|--------|---------|
-                | cosine similarity with xbai | 1.02   |  0.52   |
+                |cosine similarity with mxbai | 1.02   |  0.52   |
                 | all-MiniLM-L6-v2 finetuned  | 0.97   |  0.72   |
                 | all-MiniLM-L6-v2 finetuned  | 0.97   |  0.72   |  
                 | degree 1 poly regression    | 0.80   |  0.73   |
