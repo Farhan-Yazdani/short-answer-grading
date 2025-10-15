@@ -55,7 +55,7 @@ the mxbai-embed-large does perform better.
 
 ## Finetuning sentence embedding
 
-finetuning were done using [tutorial](https://huggingface.co/blog/train-sentence-transformers#trainer) with [SentenceTransformers library](https://sbert.net/index.html).
+finetuning were done using [this](https://huggingface.co/blog/train-sentence-transformers#trainer) tutorial with [SentenceTransformers library](https://sbert.net/index.html).
 The results were impressive especially considering base model performance was worse than models available by ollama.
 The selected loss function was CoSENTLoss (Cosine Sentence) which uses (sentence_A, sentence_B) pairs with a float for similarity score between 0 and 1.
 This is ideal since we already have the given score of two sentences(student and teacher answer).
